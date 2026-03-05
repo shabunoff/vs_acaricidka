@@ -428,6 +428,32 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header-inner {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .logo-link {
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .logo {
+        height: 36px;
+        max-width: 180px;
+        object-fit: contain;
+        object-position: left center;
+    }
+
+    .phone {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .phone-group {
+        gap: 8px;
+    }
+
     .nav {
         display: none;
         /* Hide nav on mobile for cleaner hero view */
@@ -438,8 +464,12 @@ body {
         letter-spacing: -1.5px;
     }
 
+    .hero-visual .image-wrapper {
+        display: none;
+    }
+
     .hero-visual {
-        padding: 48px 0;
+        padding: 24px 0 0;
     }
 
     .hero-img {
@@ -447,22 +477,43 @@ body {
         animation: none;
     }
 
-    .card {
-        position: relative;
-        top: auto;
-        right: auto;
-        left: auto;
-        bottom: auto;
-        margin-bottom: 24px;
-        max-width: 100%;
-    }
-
     .floating-cards {
         position: relative;
         display: flex;
         flex-direction: column;
         gap: 16px;
-        margin-top: 40px;
+        margin-top: 0;
+    }
+
+    .hero-visual .card {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        margin-bottom: 0;
+        max-width: 100%;
+        background: linear-gradient(135deg, rgba(255, 248, 248, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
+        border: 1px solid rgba(230, 26, 29, 0.12);
+        border-radius: 16px;
+        padding: 20px 24px;
+        box-shadow: 0 8px 24px -8px rgba(230, 26, 29, 0.12);
+        transition: none;
+    }
+
+    .hero-visual .card:hover {
+        transform: none;
+    }
+
+    .hero-visual .card .card-content p {
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--text-main);
+    }
+
+    .hero-visual .warning-icon {
+        width: 44px;
+        height: 44px;
     }
 
     .img-backdrop {
