@@ -459,6 +459,10 @@ body {
         /* Hide nav on mobile for cleaner hero view */
     }
 
+    .hero {
+        padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+    }
+
     .hero-title {
         font-size: 42px;
         letter-spacing: -1.5px;
@@ -469,7 +473,7 @@ body {
     }
 
     .hero-visual {
-        padding: 24px 0 0;
+        padding: 24px 0 32px;
     }
 
     .hero-img {
@@ -482,7 +486,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        margin-top: 0;
+        margin-top: 24px;
     }
 
     .hero-visual .card {
