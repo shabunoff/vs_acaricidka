@@ -1248,6 +1248,14 @@ body {
         padding: 40px 24px;
     }
 
+    .clients-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .client-card {
+        min-width: 0;
+    }
+
     .stats-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -1259,7 +1267,7 @@ body {
     }
 
     .clients-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
