@@ -497,12 +497,14 @@ body {
         bottom: auto;
         margin-bottom: 0;
         max-width: 100%;
+        transform: none;
         background: linear-gradient(135deg, rgba(255, 248, 248, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
         border: 1px solid rgba(230, 26, 29, 0.12);
         border-radius: 16px;
         padding: 20px 24px;
         box-shadow: 0 8px 24px -8px rgba(230, 26, 29, 0.12);
         transition: none;
+        animation: none;
     }
 
     .hero-visual .card:hover {
